@@ -1,0 +1,21 @@
+[submodule "cookbooks/zabbix"]
+	path = cookbooks/zabbix
+	url = git@github.com:laradji/zabbix.git
+[submodule "cookbooks/postgresql"]
+	path = cookbooks/postgresql
+	url = git@github.com:opscode-cookbooks/postgresql.git
+[submodule "cookbooks/build-essential"]
+	path = cookbooks/build-essential
+	url = git@github.com:opscode-cookbooks/build-essential.git
+[submodule "cookbooks/database"]
+	path = cookbooks/database
+	url = git@github.com:opscode-cookbooks/database.git
+[submodule "cookbooks/ohai"]
+	path = cookbooks/ohai
+	url = git@github.com:opscode-cookbooks/ohai.git
+[submodule "cookbooks/runit"]
+	path = cookbooks/runit
+	url = git@github.com:opscode-cookbooks/runit.git
+[submodule "cookbooks/bluepill"]
+	path = cookbooks/bluepill
+	url = git@github.com:opscode-cookbooks/bluepill.git
