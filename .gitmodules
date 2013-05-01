@@ -25,3 +25,33 @@
 [submodule "cookbooks/mysql"]
 	path = cookbooks/mysql
 	url = git@github.com:opscode-cookbooks/mysql.git
+[submodule "cookbooks/openssl"]
+	path = cookbooks/openssl
+	url = git@github.com:opscode-cookbooks/openssl.git
+[submodule "cookbooks/php"]
+	path = cookbooks/php
+	url = git@github.com:opscode-cookbooks/php.git
+[submodule "cookbooks/xml"]
+	path = cookbooks/xml
+	url = git@github.com:opscode-cookbooks/xml.git
+[submodule "cookbooks/postgresql"]
+	path = cookbooks/postgresql
+	url = git@github.com:opscode-cookbooks/postgresql.git
+[submodule "cookbooks/aws"]
+	path = cookbooks/aws
+	url = git@github.com:opscode-cookbooks/aws.git
+[submodule "cookbooks/xfs"]
+	path = cookbooks/xfs
+	url = git@github.com:opscode-cookbooks/xfs.git
+[submodule "cookbooks/apt"]
+	path = cookbooks/apt
+	url = git@github.com:opscode-cookbooks/apt.git
+[submodule "cookbooks/ufw"]
+	path = cookbooks/ufw
+	url = git@github.com:opscode-cookbooks/ufw.git
+[submodule "cookbooks/firewall"]
+	path = cookbooks/firewall
+	url = git@github.com:opscode-cookbooks/firewall.git
+[submodule "cookbooks/yum"]
+	path = cookbooks/yum
+	url = git@github.com:opscode-cookbooks/yum.git
