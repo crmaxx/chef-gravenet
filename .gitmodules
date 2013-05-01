@@ -1,9 +1,6 @@
 [submodule "cookbooks/zabbix"]
 	path = cookbooks/zabbix
 	url = git@github.com:laradji/zabbix.git
-[submodule "cookbooks/postgresql"]
-	path = cookbooks/postgresql
-	url = git@github.com:opscode-cookbooks/postgresql.git
 [submodule "cookbooks/build-essential"]
 	path = cookbooks/build-essential
 	url = git@github.com:opscode-cookbooks/build-essential.git
