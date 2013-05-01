@@ -19,3 +19,9 @@
 [submodule "cookbooks/bluepill"]
 	path = cookbooks/bluepill
 	url = git@github.com:opscode-cookbooks/bluepill.git
+[submodule "cookbooks/apache2"]
+	path = cookbooks/apache2
+	url = git@github.com:opscode-cookbooks/apache2.git
+[submodule "cookbooks/logrotate"]
+	path = cookbooks/logrotate
+	url = git@github.com:opscode-cookbooks/logrotate.git
