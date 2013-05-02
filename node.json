@@ -1,7 +1,68 @@
 {
+  "hostname": "gravenet.ru",
   "user": { 
     "name": "deployer",
     "password": "$1$OZs8dgf0$n9Fx687lMnpgH0VFIMSBV1"
   },
-  "run_list":["recipe[main]"]
+  "mysql": {
+  	"pid_file": "/var/run/mysqld/mysqld.pid",
+  	"socket": "/var/run/mysqld/mysqld.sock",
+  	"server_root_password": "il0verandompasswordsbutthiswi11do",
+  	"server_repl_password": "il0verandompasswordsbutthiswi11do",
+    "server_debian_password": "il0verandompasswordsbutthiswi11do",
+    "bind_address": "localhost"
+  },
+  "apache2": {
+  	"listen_ports": ["80", "443"]
+  },
+  "zabbix": {
+  	"agent": {
+        "servers": ["127.0.0.1"],
+        "servers_active": ["127.0.0.1"]
+    },
+    "web": {
+  		"install": "true"
+  	},
+    "server": {
+  		"install": "true",
+  		"branch": "ZABBIX%20Latest%20Stable",
+  		"version": "2.0.3",
+  		"install_method": "source"
+  	},
+  	"database": {
+  		"install_method": "mysql",
+  		"dbname": "zabbix",
+  		"dbuser": "zabbix",
+  		"dbhost": "localhost",
+  		"dbpassword": "great_zabbix_password",
+  		"dbport": "3306"
+  	}
+  },
+  "firewall": {
+  	"rules": [
+        {"http": {
+            "ports": ["80", "443"]
+        }},
+        {"block http from 192.168.1.0/24": {
+            "port": "80",
+            "source": "192.168.1.0/24",
+            "action": "deny"
+        }}
+    ]
+  },
+  "run_list":["recipe[main]",
+  			  "recipe[logrotate]",
+  			  "recipe[php]",
+  			  "recipe[apache2]",
+  			  "recipe[apache2::mod_ssl]",
+  			  "recipe[apache2::mod_php5]",
+  			  "recipe[database::mysql]",
+  			  "recipe[mysql::server]",
+  			  "recipe[mysql::client]",
+  			  "recipe[zabbix::default]",
+  			  "recipe[zabbix::database]",
+  			  "recipe[zabbix::server]",
+  			  "recipe[zabbix::web]",
+  			  "recipe[firewall]",
+  			  "recipe[ufw]"]
 }

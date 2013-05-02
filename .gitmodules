@@ -1,6 +1,3 @@
-[submodule "cookbooks/zabbix"]
-	path = cookbooks/zabbix
-	url = git@github.com:laradji/zabbix.git
 [submodule "cookbooks/build-essential"]
 	path = cookbooks/build-essential
 	url = git@github.com:opscode-cookbooks/build-essential.git
@@ -55,3 +52,6 @@
 [submodule "cookbooks/yum"]
 	path = cookbooks/yum
 	url = git@github.com:opscode-cookbooks/yum.git
+[submodule "cookbooks/zabbix"]
+	path = cookbooks/zabbix
+	url = git@github.com:AdallomRoy/zabbix.git
